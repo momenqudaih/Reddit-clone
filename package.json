@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node src/index.js",
         "dev": "nodemon src/index.js",
+        "lint": "eslint --fix --ext .js,.jsx .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Momen Qudaih",
@@ -22,6 +23,8 @@
         "pg": "^8.10.0"
     },
     "devDependencies": {
+        "eslint": "^8.38.0",
+        "eslint-config-google": "^0.14.0",
         "nodemon": "^2.0.22"
     }
 }
