@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poppins:wght@200;300;400&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/Reddit_Mark_OnDark.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Reddit</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/"><img class="logo" src="../assets/logo.png" /></a>
+        <div class="search">
+            <i class="search-btn fa fa-search"></i>
+            <input type="text" class="search" placeholder="Search Reddit" />
+        </div>
+        <div class="reges">
+            <a href="./login.html"><button class="login">Log In</button></a>
+            <a href="./signup.html"><button class="signup">Sign Up</button></a>
+        </div>
+        <!-- <div class="reges reges-logedin">
+            <h4 class="hi-user"> Welcome @momen_qudaih</h4>
+            <a href="./html/login.html"><button class="login">Log out</button></a>
+        </div> -->
+    </nav>
+    <div class="profile-info">
+        <div class="cover-img-box">
+            <img class="cover-img" src="../assets/5c1d30a5dc7fb8d5f74cbc09f83b182e.jpg" alt="">
+        </div>
+        <img class="person-img" src="../assets/user-img.png" alt="">
+    </div>
+    <div class="container">
+        <div class="posts-container">
+            <div class="post">
+                <div class="top-down">
+                    <button id="up-vote">
+                        <img src="../assets/arrow-up.png" alt="Top">
+                    </button>
+                    <p>10</p>
+                    <button>
+                        <img src="../assets/arrow-up.png" alt="down" class="rotate">
+                    </button>
+                </div>
+                <div class="main-post">
+                    <div class="post-info">
+                        <div class="user-info">
+                            <img class="poster-img" src="../assets/user-img.png" alt="Info Image">
+                            <h2 class="poster-name">momen_qudaih</h2>
+                            <span class="post-time">6 min ago</span>
+                        </div>
+                        <!-- <button id="deletePost" onclick="deletePost(1)" data-id="1">Delete</button> -->
+                    </div>
+                    <div class="post-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia error cupiditate doloribus non odio fuga officiis. Repellat praesentium impedit voluptatibus. Consequuntur, reiciendis odit iusto suscipit assumenda ea dicta provident
+                            veniam?
+                        </p>
+                    </div>
+                    <div class="post-img">
+                        <img src="../assets/putin.jpg" alt="">
+                    </div>
+                    <div class="post-footer">
+                        <button class="comments">Comments</button>
+                        <button class="share">share</button>
+                        <button class="save">save</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

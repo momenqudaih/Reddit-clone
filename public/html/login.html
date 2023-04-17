@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Poppins:wght@200;300;400&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/login.signup.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../assets/login.PNG" alt="login background" />
+
+        <div class="form-body">
+            <h4>Login</h4>
+            <p class="text">
+                By continuing, you agree to our <a href="#">User Agreement</a> and
+                <a href="#">Privacy Policy</a>.
+            </p>
+            <div class="gmail">
+                <img src="../assets/google.png" alt="google" />
+                <p>Continue With Google</p>
+            </div>
+            <div class="gmail">
+                <img src="../assets/apple.png" alt="apple" />
+                <p>Continue With Apple</p>
+            </div>
+            <div class="or">
+                <hr /> OR
+                <hr />
+            </div>
+            <form class="login-form form">
+                <input type="email" name="email" id="email" placeholder="Email" required />
+                <input type="password" name="password" id="password" placeholder="Password" required />
+                <button type="submit">Login</button>
+            </form>
+            <h5 class="new">New to Reddit? <a href="./signup.html">SIGN UP</a></h5>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
