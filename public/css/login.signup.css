@@ -4,10 +4,10 @@
 }
 
 body {
-    font-family: "Cairo", sans-serif;
-    font-family: "Poppins", sans-serif;
-    font-family: "Roboto", sans-serif;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 :root {
@@ -122,4 +122,8 @@ hr {
 .already,
 .new {
     margin-top: 20px;
+}
+
+.error {
+    color: red;
 }
