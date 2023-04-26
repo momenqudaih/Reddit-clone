@@ -3,6 +3,8 @@ const {
     getUserByEmailQuery,
     getUserByUsernameQuery,
     getAllPostsQuery,
+    createPostQuery,
+    getSinglePostQuery,
 } = require('./queries');
 
 module.exports = {
@@ -10,4 +12,6 @@ module.exports = {
     getUserByEmailQuery,
     getUserByUsernameQuery,
     getAllPostsQuery,
+    createPostQuery,
+    getSinglePostQuery,
 };

@@ -1,8 +1,8 @@
 const joi = require('joi');
 
 const createPostSchema = joi.object({
-    title: joi.string().required(),
     content: joi.string().required(),
+    image: joi.string().allow(null, ''),
 });
 
 module.exports = { createPostSchema };

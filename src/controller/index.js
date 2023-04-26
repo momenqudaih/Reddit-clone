@@ -14,6 +14,8 @@ const {
     getIndexPageController,
     getCommentsPageController,
     getAllPostsController,
+    createPostController,
+    getSinglePostController,
 } = require('./posts');
 
 module.exports = {
@@ -31,4 +33,6 @@ module.exports = {
     getProfilePageController,
     getCurrentUserController,
     getAllPostsController,
+    createPostController,
+    getSinglePostController,
 };

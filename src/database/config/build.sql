@@ -13,7 +13,7 @@ CREATE TABLE users (
 CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
     content TEXT NOT NULL,
-    image VARCHAR(255) NOT NULL,
+    image VARCHAR(255) ,
     user_id INTEGER NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES users(id)

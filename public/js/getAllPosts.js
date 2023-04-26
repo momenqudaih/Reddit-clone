@@ -63,7 +63,7 @@ fetch('/posts/', { method: 'GET' })
 
             const postTimeElement = document.createElement('span');
             postTimeElement.classList.add('post-time');
-            postTimeElement.textContent = post.created_at;
+            postTimeElement.textContent = getTimeSincePost(post.created_at);
             userInfoElement.appendChild(postTimeElement);
 
             const postBodyElement = document.createElement('div');
@@ -78,10 +78,12 @@ fetch('/posts/', { method: 'GET' })
             postImgElement.classList.add('post-img');
             mainPostElement.appendChild(postImgElement);
 
-            const imgElement = document.createElement('img');
-            imgElement.setAttribute('src', post.image);
-            imgElement.setAttribute('alt', '');
-            postImgElement.appendChild(imgElement);
+            if (post.image) {
+                const imgElement = document.createElement('img');
+                imgElement.setAttribute('src', post.image);
+                imgElement.setAttribute('alt', 'Post Image');
+                postImgElement.appendChild(imgElement);
+            }
 
             const postFooterElement = document.createElement('div');
             postFooterElement.classList.add('post-footer');
@@ -89,6 +91,8 @@ fetch('/posts/', { method: 'GET' })
 
             const commentsButtonElement = document.createElement('button');
             commentsButtonElement.classList.add('comments');
+            commentsButtonElement.setAttribute('data-post-id', post.id);
+            commentsButtonElement.setAttribute('id', 'commentsBtn');
             commentsButtonElement.textContent = 'Comments';
             postFooterElement.appendChild(commentsButtonElement);
 
@@ -108,3 +112,27 @@ fetch('/posts/', { method: 'GET' })
         });
     })
     .catch((err) => console.log(err));
+
+// eslint-disable-next-line require-jsdoc
+const getTimeSincePost = (createdAt) => {
+    const postDate = new Date(createdAt);
+    const currentDate = new Date();
+    const timeDiff = currentDate - postDate;
+
+    const timeDiffSeconds = Math.floor(timeDiff / 1000);
+    let finalDate;
+    if (timeDiffSeconds < 60) {
+        finalDate = `${timeDiffSeconds} seconds ago`;
+    } else if (timeDiffSeconds < 3600) {
+        const minutes = Math.floor(timeDiffSeconds / 60);
+        finalDate = `${minutes} m`;
+    } else if (timeDiffSeconds < 86400) {
+        const hours = Math.floor(timeDiffSeconds / 3600);
+        finalDate = `${hours} h`;
+    } else {
+        const days = Math.floor(timeDiffSeconds / 86400);
+        finalDate = `${days} d`;
+    }
+
+    return finalDate;
+};
