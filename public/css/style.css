@@ -57,6 +57,7 @@ nav {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 @media (max-width: 600px) {
@@ -347,7 +348,6 @@ form img {
     margin-bottom: 20px;
     border: 1px solid #343536;
     border-radius: 5px;
-    min-height: 200px;
     color: var(--second-font);
     padding-bottom: 25px;
     transition: 0.3s ease;
@@ -387,12 +387,12 @@ form img {
 }
 
 .main-post {
-    min-height: 200px;
+    min-height: 170px;
     width: 93%;
     padding: 0 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     color: var(--second-font);
 }
@@ -598,6 +598,10 @@ form img {
 
 .posts-container-coms {
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .commenter-info .user-info.com {
