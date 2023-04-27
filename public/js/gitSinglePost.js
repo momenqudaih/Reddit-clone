@@ -5,8 +5,7 @@ setTimeout(() => {
         commentsBtn.addEventListener('click', (e) => {
             e.preventDefault();
             const postId = e.target.getAttribute('data-post-id');
-            console.log('postId: ', postId);
-            window.location.replace(`/comments/${postId}`);
+            window.location.replace(`/post/${postId}`);
         });
     });
 }, 1000);
