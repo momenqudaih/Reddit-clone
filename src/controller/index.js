@@ -18,6 +18,12 @@ const {
     getSinglePostController,
 } = require('./posts');
 
+const {
+    getPostCommentsController,
+    createCommentController,
+    deleteCommentController,
+} = require('./comments');
+
 module.exports = {
     signupController,
     signinController,
@@ -35,4 +41,7 @@ module.exports = {
     getAllPostsController,
     createPostController,
     getSinglePostController,
+    getPostCommentsController,
+    createCommentController,
+    deleteCommentController,
 };

@@ -160,7 +160,7 @@ nav {
 }
 
 .container {
-    padding: 0 190px;
+    padding: 0 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -621,4 +621,24 @@ form img {
 .commenter-info .user-info.com .poster-name,
 .commenter-info .user-info.com .post-time {
     font-size: 14px;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
+
+.deleteIcon {
+    color: var(--second-button);
+    font-weight: 600 !important;
+    align-self: right;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.deleteIcon:hover {
+    color: var(--main-color);
 }

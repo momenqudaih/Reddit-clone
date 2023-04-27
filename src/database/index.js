@@ -5,6 +5,9 @@ const {
     getAllPostsQuery,
     createPostQuery,
     getSinglePostQuery,
+    getPostCommentsQuery,
+    createCommentQuery,
+    deleteCommentQuery,
 } = require('./queries');
 
 module.exports = {
@@ -14,4 +17,7 @@ module.exports = {
     getAllPostsQuery,
     createPostQuery,
     getSinglePostQuery,
+    getPostCommentsQuery,
+    createCommentQuery,
+    deleteCommentQuery,
 };

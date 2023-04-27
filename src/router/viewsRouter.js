@@ -15,6 +15,6 @@ viewsRouter.get('/home', isLogged, getHomePageController);
 
 viewsRouter.get('/login', isLogged, getLoginPageController);
 viewsRouter.get('/signup', isLogged, getSignUpPageController);
-viewsRouter.get('/comments/:post_id', getCommentsPageController);
+viewsRouter.get('/post/:post_id', getCommentsPageController);
 
 module.exports = viewsRouter;

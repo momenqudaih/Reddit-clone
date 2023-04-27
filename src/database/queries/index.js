@@ -10,6 +10,12 @@ const {
     getSinglePostQuery,
 } = require('./posts');
 
+const {
+    getPostCommentsQuery,
+    createCommentQuery,
+    deleteCommentQuery,
+} = require('./comments');
+
 module.exports = {
     signupQuery,
     getUserByEmailQuery,
@@ -17,4 +23,7 @@ module.exports = {
     getAllPostsQuery,
     createPostQuery,
     getSinglePostQuery,
+    getPostCommentsQuery,
+    createCommentQuery,
+    deleteCommentQuery,
 };

@@ -8,6 +8,7 @@ fetch('/users/')
     })
     .then((user) => {
         if (user) {
+            window.userInfo = user;
             // // User is logged in, so display their name and a logout button
             const regesContainer = document.createElement('div');
             regesContainer.classList.add('reges', 'reges-logedin');
